@@ -29,27 +29,31 @@ namespace CursosAsignacionProyecto1
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CursosHabilitadosAlumnos));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.Datos = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.DataGridView1 = new System.Windows.Forms.DataGridView();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.button5 = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Datos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -94,49 +98,19 @@ namespace CursosAsignacionProyecto1
             this.Datos.Controls.Add(this.label2);
             this.Datos.Controls.Add(this.label1);
             this.Datos.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Datos.Location = new System.Drawing.Point(15, 17);
+            this.Datos.Location = new System.Drawing.Point(15, 162);
             this.Datos.Name = "Datos";
             this.Datos.Size = new System.Drawing.Size(744, 190);
             this.Datos.TabIndex = 4;
             // 
-            // textBox1
+            // button4
             // 
-            this.textBox1.Location = new System.Drawing.Point(179, 25);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(194, 25);
-            this.textBox1.TabIndex = 3;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(179, 59);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(194, 25);
-            this.textBox2.TabIndex = 4;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(179, 94);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(194, 25);
-            this.textBox3.TabIndex = 5;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(410, 130);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(80, 38);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Buscar";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(83, 130);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(80, 38);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "Guardar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button4.Location = new System.Drawing.Point(309, 130);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(80, 38);
+            this.button4.TabIndex = 9;
+            this.button4.Text = "Eliminar";
+            this.button4.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
@@ -147,14 +121,44 @@ namespace CursosAsignacionProyecto1
             this.button3.Text = "Editar";
             this.button3.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // button2
             // 
-            this.button4.Location = new System.Drawing.Point(309, 130);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(80, 38);
-            this.button4.TabIndex = 9;
-            this.button4.Text = "Eliminar";
-            this.button4.UseVisualStyleBackColor = true;
+            this.button2.Location = new System.Drawing.Point(83, 130);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(80, 38);
+            this.button2.TabIndex = 7;
+            this.button2.Text = "Guardar";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(410, 130);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(80, 38);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "Buscar";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(179, 94);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(194, 25);
+            this.textBox3.TabIndex = 5;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(179, 59);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(194, 25);
+            this.textBox2.TabIndex = 4;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(179, 25);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(194, 25);
+            this.textBox1.TabIndex = 3;
             // 
             // DataGridView1
             // 
@@ -168,33 +172,12 @@ namespace CursosAsignacionProyecto1
             this.Column2,
             this.Column3,
             this.Column4});
-            this.DataGridView1.Location = new System.Drawing.Point(15, 229);
+            this.DataGridView1.Location = new System.Drawing.Point(15, 376);
             this.DataGridView1.Name = "DataGridView1";
             this.DataGridView1.ReadOnly = true;
             this.DataGridView1.RowHeadersVisible = false;
             this.DataGridView1.Size = new System.Drawing.Size(744, 283);
             this.DataGridView1.TabIndex = 5;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.panel1.Controls.Add(this.button5);
-            this.panel1.Controls.Add(this.DataGridView1);
-            this.panel1.Controls.Add(this.Datos);
-            this.panel1.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel1.Location = new System.Drawing.Point(9, 11);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(779, 585);
-            this.panel1.TabIndex = 6;
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(679, 532);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(80, 38);
-            this.button5.TabIndex = 7;
-            this.button5.Text = "Salir";
-            this.button5.UseVisualStyleBackColor = true;
             // 
             // Column1
             // 
@@ -220,18 +203,65 @@ namespace CursosAsignacionProyecto1
             this.Column4.Name = "Column4";
             this.Column4.ReadOnly = true;
             // 
-            // Form1
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.panel1.Controls.Add(this.label7);
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.button5);
+            this.panel1.Controls.Add(this.DataGridView1);
+            this.panel1.Controls.Add(this.Datos);
+            this.panel1.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel1.Location = new System.Drawing.Point(9, 11);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(779, 719);
+            this.panel1.TabIndex = 6;
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(696, 678);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(80, 38);
+            this.button5.TabIndex = 7;
+            this.button5.Text = "Salir";
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Arial", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(83, 106);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(539, 32);
+            this.label7.TabIndex = 34;
+            this.label7.Text = "CUROSOS HABILITADOS DE CURSOSO";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.ErrorImage")));
+            this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
+            this.pictureBox1.Location = new System.Drawing.Point(492, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(267, 91);
+            this.pictureBox1.TabIndex = 33;
+            this.pictureBox1.TabStop = false;
+            // 
+            // CursosHabilitadosAlumnos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 608);
+            this.ClientSize = new System.Drawing.Size(800, 742);
             this.Controls.Add(this.panel1);
-            this.Name = "Form1";
+            this.Name = "CursosHabilitadosAlumnos";
             this.Text = "Cursos Habilitados Alumnos";
             this.Datos.ResumeLayout(false);
             this.Datos.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -256,5 +286,7 @@ namespace CursosAsignacionProyecto1
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

@@ -16,5 +16,10 @@ namespace CursosAsignacionProyecto1
         {
             InitializeComponent();
         }
+
+        private void label15_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
