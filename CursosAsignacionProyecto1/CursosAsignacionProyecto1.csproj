@@ -135,9 +135,12 @@
     <EmbeddedResource Include="ListadoAlumnosSeccion.resx">
       <DependentUpon>ListadoAlumnosSeccion.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
+=======
+>>>>>>> 4846ad0b945345cdacce35dae4231a1aa7264e32
     <EmbeddedResource Include="Pensum.resx">
       <DependentUpon>Pensum.cs</DependentUpon>
     </EmbeddedResource>
