@@ -61,8 +61,8 @@ namespace CursosAsignacionProyecto1
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.GroupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.panel1.SuspendLayout();
@@ -76,9 +76,9 @@ namespace CursosAsignacionProyecto1
             this.ComboBox2.Items.AddRange(new object[] {
             "2008",
             "2014"});
-            this.ComboBox2.Location = new System.Drawing.Point(710, 30);
+            this.ComboBox2.Location = new System.Drawing.Point(332, 89);
             this.ComboBox2.Name = "ComboBox2";
-            this.ComboBox2.Size = new System.Drawing.Size(121, 21);
+            this.ComboBox2.Size = new System.Drawing.Size(185, 21);
             this.ComboBox2.TabIndex = 20;
             // 
             // ComboBox1
@@ -88,7 +88,7 @@ namespace CursosAsignacionProyecto1
             "Facultad de ingenieria en sistemas Matutina",
             "Facultad de ingenieria en sistemas Vespertina",
             "Facultad de ingenieria en sistemas Fin de semana"});
-            this.ComboBox1.Location = new System.Drawing.Point(492, 30);
+            this.ComboBox1.Location = new System.Drawing.Point(332, 30);
             this.ComboBox1.Name = "ComboBox1";
             this.ComboBox1.Size = new System.Drawing.Size(185, 21);
             this.ComboBox1.TabIndex = 12;
@@ -96,7 +96,7 @@ namespace CursosAsignacionProyecto1
             // Button1
             // 
             this.Button1.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Button1.Location = new System.Drawing.Point(845, 19);
+            this.Button1.Location = new System.Drawing.Point(580, 48);
             this.Button1.Name = "Button1";
             this.Button1.Size = new System.Drawing.Size(85, 38);
             this.Button1.TabIndex = 19;
@@ -105,9 +105,9 @@ namespace CursosAsignacionProyecto1
             // 
             // Textcarnet
             // 
-            this.Textcarnet.Location = new System.Drawing.Point(302, 30);
+            this.Textcarnet.Location = new System.Drawing.Point(8, 89);
             this.Textcarnet.Name = "Textcarnet";
-            this.Textcarnet.Size = new System.Drawing.Size(168, 20);
+            this.Textcarnet.Size = new System.Drawing.Size(267, 20);
             this.Textcarnet.TabIndex = 18;
             // 
             // Textnombre
@@ -121,7 +121,7 @@ namespace CursosAsignacionProyecto1
             // 
             this.Label4.AutoSize = true;
             this.Label4.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label4.Location = new System.Drawing.Point(714, 9);
+            this.Label4.Location = new System.Drawing.Point(329, 69);
             this.Label4.Name = "Label4";
             this.Label4.Size = new System.Drawing.Size(110, 17);
             this.Label4.TabIndex = 16;
@@ -131,7 +131,7 @@ namespace CursosAsignacionProyecto1
             // 
             this.Label3.AutoSize = true;
             this.Label3.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label3.Location = new System.Drawing.Point(489, 14);
+            this.Label3.Location = new System.Drawing.Point(329, 9);
             this.Label3.Name = "Label3";
             this.Label3.Size = new System.Drawing.Size(127, 17);
             this.Label3.TabIndex = 15;
@@ -141,7 +141,7 @@ namespace CursosAsignacionProyecto1
             // 
             this.Label2.AutoSize = true;
             this.Label2.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label2.Location = new System.Drawing.Point(309, 14);
+            this.Label2.Location = new System.Drawing.Point(5, 69);
             this.Label2.Name = "Label2";
             this.Label2.Size = new System.Drawing.Size(52, 17);
             this.Label2.TabIndex = 14;
@@ -151,7 +151,7 @@ namespace CursosAsignacionProyecto1
             // 
             this.Label1.AutoSize = true;
             this.Label1.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label1.Location = new System.Drawing.Point(8, 9);
+            this.Label1.Location = new System.Drawing.Point(2, 9);
             this.Label1.Name = "Label1";
             this.Label1.Size = new System.Drawing.Size(223, 17);
             this.Label1.TabIndex = 13;
@@ -227,9 +227,9 @@ namespace CursosAsignacionProyecto1
             this.GroupBox2.Controls.Add(this.button11);
             this.GroupBox2.Controls.Add(this.dataGridView2);
             this.GroupBox2.Font = new System.Drawing.Font("Arial", 11F);
-            this.GroupBox2.Location = new System.Drawing.Point(9, 227);
+            this.GroupBox2.Location = new System.Drawing.Point(21, 284);
             this.GroupBox2.Name = "GroupBox2";
-            this.GroupBox2.Size = new System.Drawing.Size(942, 438);
+            this.GroupBox2.Size = new System.Drawing.Size(913, 414);
             this.GroupBox2.TabIndex = 29;
             this.GroupBox2.TabStop = false;
             this.GroupBox2.Text = "Cursos";
@@ -237,17 +237,16 @@ namespace CursosAsignacionProyecto1
             // button7
             // 
             this.button7.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(800, 388);
+            this.button7.Location = new System.Drawing.Point(809, 364);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(85, 38);
             this.button7.TabIndex = 5;
             this.button7.Text = "Salir";
             this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(94, 344);
+            this.textBox2.Location = new System.Drawing.Point(92, 323);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(168, 24);
             this.textBox2.TabIndex = 6;
@@ -256,7 +255,7 @@ namespace CursosAsignacionProyecto1
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(17, 347);
+            this.label6.Location = new System.Drawing.Point(15, 323);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(71, 17);
             this.label6.TabIndex = 5;
@@ -266,46 +265,42 @@ namespace CursosAsignacionProyecto1
             // 
             this.button8.Cursor = System.Windows.Forms.Cursors.Default;
             this.button8.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.Location = new System.Drawing.Point(306, 388);
+            this.button8.Location = new System.Drawing.Point(315, 364);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(85, 38);
             this.button8.TabIndex = 4;
             this.button8.Text = "eliminar";
             this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // button9
             // 
             this.button9.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.Location = new System.Drawing.Point(9, 388);
+            this.button9.Location = new System.Drawing.Point(18, 364);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(85, 38);
             this.button9.TabIndex = 3;
             this.button9.Text = "Aceptar";
             this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // button10
             // 
             this.button10.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button10.Location = new System.Drawing.Point(213, 388);
+            this.button10.Location = new System.Drawing.Point(222, 364);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(85, 38);
             this.button10.TabIndex = 2;
             this.button10.Text = "editar";
             this.button10.UseVisualStyleBackColor = true;
-            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // button11
             // 
             this.button11.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button11.Location = new System.Drawing.Point(111, 388);
+            this.button11.Location = new System.Drawing.Point(120, 364);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(85, 38);
             this.button11.TabIndex = 1;
             this.button11.Text = "agregar";
             this.button11.UseVisualStyleBackColor = true;
-            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // dataGridView2
             // 
@@ -320,11 +315,11 @@ namespace CursosAsignacionProyecto1
             this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn4,
             this.dataGridViewTextBoxColumn5});
-            this.dataGridView2.Location = new System.Drawing.Point(9, 55);
+            this.dataGridView2.Location = new System.Drawing.Point(18, 23);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.ReadOnly = true;
             this.dataGridView2.RowHeadersVisible = false;
-            this.dataGridView2.Size = new System.Drawing.Size(916, 283);
+            this.dataGridView2.Size = new System.Drawing.Size(876, 283);
             this.dataGridView2.TabIndex = 0;
             // 
             // dataGridViewTextBoxColumn1
@@ -369,57 +364,55 @@ namespace CursosAsignacionProyecto1
             this.panel1.Controls.Add(this.Label2);
             this.panel1.Controls.Add(this.Label1);
             this.panel1.Controls.Add(this.Button1);
-            this.panel1.Location = new System.Drawing.Point(13, 128);
+            this.panel1.Location = new System.Drawing.Point(21, 118);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(938, 70);
+            this.panel1.Size = new System.Drawing.Size(913, 148);
             this.panel1.TabIndex = 30;
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.panel2.Controls.Add(this.label7);
-            this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Controls.Add(this.GroupBox2);
-            this.panel2.Controls.Add(this.TextBox1);
             this.panel2.Controls.Add(this.panel1);
+            this.panel2.Controls.Add(this.TextBox1);
             this.panel2.Controls.Add(this.Label5);
             this.panel2.Controls.Add(this.Button5);
             this.panel2.Controls.Add(this.Button4);
             this.panel2.Controls.Add(this.Button3);
             this.panel2.Controls.Add(this.Button2);
+            this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Location = new System.Drawing.Point(3, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(957, 689);
+            this.panel2.Size = new System.Drawing.Size(957, 753);
             this.panel2.TabIndex = 31;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.ErrorImage")));
-            this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(667, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(267, 91);
-            this.pictureBox1.TabIndex = 31;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Arial", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(238, 56);
+            this.label7.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(348, 59);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(360, 32);
-            this.label7.TabIndex = 32;
-            this.label7.Text = "ASIGNACION DE CURSOS";
+            this.label7.Size = new System.Drawing.Size(267, 29);
+            this.label7.TabIndex = 31;
+            this.label7.Text = "Asignacion de Cursos";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
+            this.pictureBox1.Location = new System.Drawing.Point(666, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(268, 125);
+            this.pictureBox1.TabIndex = 32;
+            this.pictureBox1.TabStop = false;
             // 
             // AsignacionCursos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(961, 701);
+            this.ClientSize = new System.Drawing.Size(961, 725);
             this.Controls.Add(this.panel2);
             this.Name = "AsignacionCursos";
             this.Text = "Asignacion de cursos";
@@ -468,7 +461,7 @@ namespace CursosAsignacionProyecto1
         internal System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

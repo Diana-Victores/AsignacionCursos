@@ -37,11 +37,11 @@ namespace CursosAsignacionProyecto1
             this.lbl_idseccion = new System.Windows.Forms.Label();
             this.lbl_idcurso = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.DataGridView1 = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label7 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView1)).BeginInit();
@@ -51,7 +51,7 @@ namespace CursosAsignacionProyecto1
             // btn_salir
             // 
             this.btn_salir.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_salir.Location = new System.Drawing.Point(545, 498);
+            this.btn_salir.Location = new System.Drawing.Point(542, 509);
             this.btn_salir.Name = "btn_salir";
             this.btn_salir.Size = new System.Drawing.Size(85, 38);
             this.btn_salir.TabIndex = 13;
@@ -61,7 +61,7 @@ namespace CursosAsignacionProyecto1
             // btn_buscar
             // 
             this.btn_buscar.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_buscar.Location = new System.Drawing.Point(545, 158);
+            this.btn_buscar.Location = new System.Drawing.Point(542, 135);
             this.btn_buscar.Name = "btn_buscar";
             this.btn_buscar.Size = new System.Drawing.Size(85, 38);
             this.btn_buscar.TabIndex = 12;
@@ -70,14 +70,14 @@ namespace CursosAsignacionProyecto1
             // 
             // txt_idseccion
             // 
-            this.txt_idseccion.Location = new System.Drawing.Point(431, 158);
+            this.txt_idseccion.Location = new System.Drawing.Point(405, 142);
             this.txt_idseccion.Name = "txt_idseccion";
             this.txt_idseccion.Size = new System.Drawing.Size(97, 25);
             this.txt_idseccion.TabIndex = 11;
             // 
             // txt_idcurso
             // 
-            this.txt_idcurso.Location = new System.Drawing.Point(19, 158);
+            this.txt_idcurso.Location = new System.Drawing.Point(111, 142);
             this.txt_idcurso.Name = "txt_idcurso";
             this.txt_idcurso.Size = new System.Drawing.Size(97, 25);
             this.txt_idcurso.TabIndex = 10;
@@ -86,7 +86,7 @@ namespace CursosAsignacionProyecto1
             // 
             this.lbl_idseccion.AutoSize = true;
             this.lbl_idseccion.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_idseccion.Location = new System.Drawing.Point(428, 138);
+            this.lbl_idseccion.Location = new System.Drawing.Point(323, 142);
             this.lbl_idseccion.Name = "lbl_idseccion";
             this.lbl_idseccion.Size = new System.Drawing.Size(76, 17);
             this.lbl_idseccion.TabIndex = 9;
@@ -96,7 +96,7 @@ namespace CursosAsignacionProyecto1
             // 
             this.lbl_idcurso.AutoSize = true;
             this.lbl_idcurso.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_idcurso.Location = new System.Drawing.Point(26, 129);
+            this.lbl_idcurso.Location = new System.Drawing.Point(30, 146);
             this.lbl_idcurso.Name = "lbl_idcurso";
             this.lbl_idcurso.Size = new System.Drawing.Size(63, 17);
             this.lbl_idcurso.TabIndex = 8;
@@ -105,8 +105,8 @@ namespace CursosAsignacionProyecto1
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.panel2.Controls.Add(this.label7);
             this.panel2.Controls.Add(this.pictureBox1);
+            this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.DataGridView1);
             this.panel2.Controls.Add(this.btn_salir);
             this.panel2.Controls.Add(this.btn_buscar);
@@ -115,10 +115,20 @@ namespace CursosAsignacionProyecto1
             this.panel2.Controls.Add(this.lbl_idseccion);
             this.panel2.Controls.Add(this.lbl_idcurso);
             this.panel2.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel2.Location = new System.Drawing.Point(12, 11);
+            this.panel2.Location = new System.Drawing.Point(-1, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(666, 544);
+            this.panel2.Size = new System.Drawing.Size(721, 555);
             this.panel2.TabIndex = 15;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(50, 43);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(358, 29);
+            this.label1.TabIndex = 15;
+            this.label1.Text = "LISTADO ALUMNOS SECCION";
             // 
             // DataGridView1
             // 
@@ -131,7 +141,7 @@ namespace CursosAsignacionProyecto1
             this.Column1,
             this.Column2,
             this.Column3});
-            this.DataGridView1.Location = new System.Drawing.Point(0, 202);
+            this.DataGridView1.Location = new System.Drawing.Point(19, 202);
             this.DataGridView1.Name = "DataGridView1";
             this.DataGridView1.ReadOnly = true;
             this.DataGridView1.RowHeadersVisible = false;
@@ -156,32 +166,22 @@ namespace CursosAsignacionProyecto1
             this.Column3.Name = "Column3";
             this.Column3.ReadOnly = true;
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Arial", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(113, 37);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(277, 32);
-            this.label7.TabIndex = 34;
-            this.label7.Text = "LISTADO ALUMNOS";
-            // 
             // pictureBox1
             // 
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.ErrorImage")));
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(396, 3);
+            this.pictureBox1.Location = new System.Drawing.Point(440, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(267, 91);
-            this.pictureBox1.TabIndex = 33;
+            this.pictureBox1.Size = new System.Drawing.Size(268, 125);
+            this.pictureBox1.TabIndex = 60;
             this.pictureBox1.TabStop = false;
             // 
             // ListadoAlumnosSeccion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(690, 559);
+            this.ClientSize = new System.Drawing.Size(718, 559);
             this.Controls.Add(this.panel2);
             this.Name = "ListadoAlumnosSeccion";
             this.Text = "Listado Alumnos Seccion";
@@ -206,7 +206,7 @@ namespace CursosAsignacionProyecto1
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

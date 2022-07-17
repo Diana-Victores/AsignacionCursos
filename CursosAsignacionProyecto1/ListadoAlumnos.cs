@@ -21,30 +21,5 @@ namespace CursosAsignacionProyecto1
         {
 
         }
-
-        private void Button3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Button5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Button4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Button6_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

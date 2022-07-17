@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CursosAsignacionProyecto1
 {
-    public partial class AsignacionCursos : Form
+    public partial class Usuario : Form
     {
-        public AsignacionCursos()
+        public Usuario()
         {
             InitializeComponent();
         }

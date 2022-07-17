@@ -70,11 +70,17 @@
     <Compile Include="BoletaAsignaciónCursos.Designer.cs">
       <DependentUpon>BoletaAsignaciónCursos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form2.cs">
+    <Compile Include="ListadoAlumnosCarrera.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="ListadoAlumnosCarrera.Designer.cs">
+      <DependentUpon>ListadoAlumnosCarrera.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Usuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuario.Designer.cs">
+      <DependentUpon>Usuario.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -126,8 +132,14 @@
     <EmbeddedResource Include="AsignacionCursos.resx">
       <DependentUpon>AsignacionCursos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <EmbeddedResource Include="ListadoAlumnosCarrera.resx">
+      <DependentUpon>ListadoAlumnosCarrera.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuario.resx">
+      <DependentUpon>Usuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ListadoAlumnos.resx">
       <DependentUpon>ListadoAlumnos.cs</DependentUpon>
@@ -135,12 +147,9 @@
     <EmbeddedResource Include="ListadoAlumnosSeccion.resx">
       <DependentUpon>ListadoAlumnosSeccion.cs</DependentUpon>
     </EmbeddedResource>
-<<<<<<< HEAD
-    <EmbeddedResource Include="Login.resx">
-      <DependentUpon>Login.cs</DependentUpon>
+    <EmbeddedResource Include="ListadoCursosAsignadosCatedráticos.resx">
+      <DependentUpon>ListadoCursosAsignadosCatedráticos.cs</DependentUpon>
     </EmbeddedResource>
-=======
->>>>>>> 4846ad0b945345cdacce35dae4231a1aa7264e32
     <EmbeddedResource Include="Pensum.resx">
       <DependentUpon>Pensum.cs</DependentUpon>
     </EmbeddedResource>

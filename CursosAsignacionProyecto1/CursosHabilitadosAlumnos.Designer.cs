@@ -48,8 +48,8 @@ namespace CursosAsignacionProyecto1
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button5 = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.Datos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -98,7 +98,7 @@ namespace CursosAsignacionProyecto1
             this.Datos.Controls.Add(this.label2);
             this.Datos.Controls.Add(this.label1);
             this.Datos.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Datos.Location = new System.Drawing.Point(15, 162);
+            this.Datos.Location = new System.Drawing.Point(15, 106);
             this.Datos.Name = "Datos";
             this.Datos.Size = new System.Drawing.Size(744, 190);
             this.Datos.TabIndex = 4;
@@ -172,7 +172,7 @@ namespace CursosAsignacionProyecto1
             this.Column2,
             this.Column3,
             this.Column4});
-            this.DataGridView1.Location = new System.Drawing.Point(15, 376);
+            this.DataGridView1.Location = new System.Drawing.Point(15, 324);
             this.DataGridView1.Name = "DataGridView1";
             this.DataGridView1.ReadOnly = true;
             this.DataGridView1.RowHeadersVisible = false;
@@ -206,53 +206,52 @@ namespace CursosAsignacionProyecto1
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.button5);
             this.panel1.Controls.Add(this.DataGridView1);
             this.panel1.Controls.Add(this.Datos);
+            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.Location = new System.Drawing.Point(9, 11);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(779, 719);
+            this.panel1.Size = new System.Drawing.Size(779, 666);
             this.panel1.TabIndex = 6;
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(696, 678);
+            this.button5.Location = new System.Drawing.Point(679, 613);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(80, 38);
             this.button5.TabIndex = 7;
             this.button5.Text = "Salir";
             this.button5.UseVisualStyleBackColor = true;
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Arial", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(83, 106);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(539, 32);
-            this.label7.TabIndex = 34;
-            this.label7.Text = "CUROSOS HABILITADOS DE CURSOSO";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
-            // 
             // pictureBox1
             // 
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.ErrorImage")));
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(492, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(481, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(267, 91);
-            this.pictureBox1.TabIndex = 33;
+            this.pictureBox1.Size = new System.Drawing.Size(278, 99);
+            this.pictureBox1.TabIndex = 60;
             this.pictureBox1.TabStop = false;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(29, 43);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(409, 29);
+            this.label4.TabIndex = 61;
+            this.label4.Text = "CURSOS HABILITADOS ALUMNOS";
             // 
             // CursosHabilitadosAlumnos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 742);
+            this.ClientSize = new System.Drawing.Size(800, 689);
             this.Controls.Add(this.panel1);
             this.Name = "CursosHabilitadosAlumnos";
             this.Text = "Cursos Habilitados Alumnos";
@@ -286,7 +285,7 @@ namespace CursosAsignacionProyecto1
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
