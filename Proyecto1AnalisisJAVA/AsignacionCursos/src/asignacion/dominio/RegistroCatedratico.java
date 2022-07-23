@@ -1,7 +1,8 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+* DIANA VICTORES
+ * 9959-19-1471
+ * REGISTRO CATEDRATICOS
+ *
  */
 package asignacion.dominio;
 
@@ -17,7 +18,8 @@ public class RegistroCatedratico {
     String idDir;
     String idCorreo;
     String idTel;
-
+    
+    
     public String getIdCat() {
         return idCat;
     }
@@ -73,6 +75,12 @@ public class RegistroCatedratico {
     public void setIdTel(String idTel) {
         this.idTel = idTel;
     }
+
+    @Override
+    public String toString() {
+        return "RegistroCatedratico{" + "idCat=" + idCat + ", nombres=" + nombres + ", apellidos=" + apellidos + ", dpi=" + dpi + ", idDir=" + idDir + ", idCorreo=" + idCorreo + ", idTel=" + idTel + '}';
+    }
+
 
     
     

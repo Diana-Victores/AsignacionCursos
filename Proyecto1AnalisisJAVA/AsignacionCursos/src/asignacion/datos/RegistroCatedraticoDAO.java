@@ -1,7 +1,8 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * DIANA VICTORES
+ * 9959-19-1471
+ * REGISTRO CATEDRATICOS
+ *
  */
 package asignacion.datos;
 
@@ -14,6 +15,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 import javax.swing.JOptionPane;
+import javax.swing.JTextField;
 
 /**
  *
@@ -51,7 +53,6 @@ private static final String SQL_DELETE = "DELETE FROM catedratico WHERE idCat=?"
                 String idDir = rs.getString("idDir");
                 String idCorreo = rs.getString("idCorreo");
                 String idTel = rs.getString("idTel");
-                        
                  
                 registrocatedratico = new RegistroCatedratico();
                 registrocatedratico.setIdCat(idCat);
@@ -62,11 +63,10 @@ private static final String SQL_DELETE = "DELETE FROM catedratico WHERE idCat=?"
                 registrocatedratico.setIdCorreo(idCorreo);
                 registrocatedratico.setIdTel(idTel);
            
-             
                 registrocatedraticos.add(registrocatedratico);
             }
 
-        } catch (SQLException ex) {
+         } catch (SQLException ex) {
             ex.printStackTrace(System.out);
         } finally {
             Conexion.close(rs);
@@ -77,20 +77,20 @@ private static final String SQL_DELETE = "DELETE FROM catedratico WHERE idCat=?"
         return registrocatedraticos;
     }
  
- public int insert(RegistroCatedratico registrocate) {
+ public int insert(RegistroCatedratico registrocatedratico) {
         Connection conn = null;
         PreparedStatement stmt = null;
         int rows = 0;
         try {
             conn = (Connection) Conexion.getConnection();
             stmt = conn.prepareStatement(SQL_INSERT);
-            stmt.setString(1,registrocate.getIdCat());
-            stmt.setString(2, registrocate.getNombres());
-            stmt.setString(3, registrocate.getApellidos());
-            stmt.setString(4,registrocate.getDpi());
-            stmt.setString(5,registrocate.getIdDir());
-            stmt.setString(6,registrocate.getIdCorreo());
-            stmt.setString(7,registrocate.getIdTel());
+            stmt.setString(1,registrocatedratico.getIdCat());
+            stmt.setString(2, registrocatedratico.getNombres());
+            stmt.setString(3, registrocatedratico.getApellidos());
+            stmt.setString(4,registrocatedratico.getDpi());
+            stmt.setString(5,registrocatedratico.getIdDir());
+            stmt.setString(6,registrocatedratico.getIdCorreo());
+            stmt.setString(7,registrocatedratico.getIdTel());
             
             
              //System.out.println("ejecutando query:" + SQL_INSERT);
@@ -106,7 +106,7 @@ private static final String SQL_DELETE = "DELETE FROM catedratico WHERE idCat=?"
 
         return rows;
     }
-  public int update(RegistroCatedratico registrocate) {
+  public int update(RegistroCatedratico registrocatedratico) {
         Connection conn = null;
         PreparedStatement stmt = null;
         int rows = 0;
@@ -115,13 +115,13 @@ private static final String SQL_DELETE = "DELETE FROM catedratico WHERE idCat=?"
             conn = (Connection) Conexion.getConnection();
             System.out.println("ejecutando query: " + SQL_UPDATE);
             stmt = conn.prepareStatement(SQL_UPDATE);
-            stmt.setString(1, registrocate.getIdCat());
-            stmt.setString(2, registrocate.getNombres());
-            stmt.setString(3, registrocate.getApellidos());
-            stmt.setString(4, registrocate.getDpi());
-            stmt.setString(5, registrocate.getIdDir());
-            stmt.setString(6, registrocate.getIdCorreo());
-            stmt.setString(7, registrocate.getIdTel());
+            stmt.setString(1, registrocatedratico.getIdCat());
+            stmt.setString(2, registrocatedratico.getNombres());
+            stmt.setString(3, registrocatedratico.getApellidos());
+            stmt.setString(4, registrocatedratico.getDpi());
+            stmt.setString(5, registrocatedratico.getIdDir());
+            stmt.setString(6, registrocatedratico.getIdCorreo());
+            stmt.setString(7, registrocatedratico.getIdTel());
 
             rows = stmt.executeUpdate();
             //System.out.println("Registros actualizado:" + rows);
@@ -135,7 +135,7 @@ private static final String SQL_DELETE = "DELETE FROM catedratico WHERE idCat=?"
 
         return rows;
     }
-  public RegistroCatedratico query(RegistroCatedratico registrocate) {    
+  public RegistroCatedratico query(RegistroCatedratico registrocatedratico) {    
         Connection conn = null;
         PreparedStatement stmt = null;
         ResultSet rs = null;
@@ -146,10 +146,10 @@ private static final String SQL_DELETE = "DELETE FROM catedratico WHERE idCat=?"
             conn = (Connection) Conexion.getConnection();
             System.out.println("Ejecutando query:" + SQL_QUERY);
             stmt = conn.prepareStatement(SQL_QUERY);
-            stmt.setString(1, registrocate.getIdCat());
+            stmt.setString(1, registrocatedratico.getIdCat());
             rs = stmt.executeQuery();
             while (rs.next()) {
-               String idCat = rs.getString("idCat");
+                String idCat = rs.getString("idCat");
                 String nombres = rs.getString("nombres");
                 String apellidos = rs.getString("apellidos");
                 String dpi = rs.getString("dpi");
@@ -157,14 +157,14 @@ private static final String SQL_DELETE = "DELETE FROM catedratico WHERE idCat=?"
                 String idCorreo = rs.getString("idCorreo");
                 String idTel = rs.getString("idTel");
                 
-                registrocate = new RegistroCatedratico();
-                registrocate.setIdCat(idCat);
-                registrocate.setNombres(nombres);
-                registrocate.setApellidos(apellidos);
-                registrocate.setDpi(dpi);
-                registrocate.setIdDir(idDir);
-                registrocate.setIdCorreo(idCorreo);
-                registrocate.setIdTel(idTel);
+                registrocatedratico = new RegistroCatedratico();
+                registrocatedratico.setIdCat(idCat);
+                registrocatedratico.setNombres(nombres);
+                registrocatedratico.setApellidos(apellidos);
+                registrocatedratico.setDpi(dpi);
+                registrocatedratico.setIdDir(idDir);
+                registrocatedratico.setIdCorreo(idCorreo);
+                registrocatedratico.setIdTel(idTel);
 
                 //empleados.add(empleado); // Si se utiliza un ArrayList
             }
@@ -178,7 +178,7 @@ private static final String SQL_DELETE = "DELETE FROM catedratico WHERE idCat=?"
         }
 
         //return empleados;  // Si se utiliza un ArrayList
-        return registrocate;
+        return registrocatedratico;
     } 
  public int delete(RegistroCatedratico registrocatedratico) {
 
@@ -202,5 +202,7 @@ private static final String SQL_DELETE = "DELETE FROM catedratico WHERE idCat=?"
 
         return rows;
     }
+
+  
     
 }
