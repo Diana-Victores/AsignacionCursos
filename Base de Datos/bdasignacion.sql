@@ -1,3 +1,4 @@
+
 -- MySQL dump 10.13  Distrib 8.0.27, for Win64 (x86_64)
 --
 -- Host: localhost    Database: bduniversidad
@@ -14,8 +15,7 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
-CREATE DATABASE AsignacionCurso CHARACTER SET utf8mb4;
-USE AsignacionCurso;
+
 --
 -- Table structure for table `alumno`
 --
@@ -523,3 +523,63 @@ UNLOCK TABLES;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
 -- Dump completed on 2022-07-19 18:27:45
+
+DROP TABLE IF EXISTS `Listadoalumnoscurso`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `Listadoalumnoscurso` (
+  `idlistado` int NOT NULL,
+  `idAlumno` int DEFAULT NULL,
+  `nombres` varchar(20) DEFAULT NULL,
+  `apellidos` varchar(20) DEFAULT NULL,
+  `carnet` int DEFAULT NULL,
+  `semestre` int DEFAULT NULL,
+  `año` int DEFAULT NULL,
+  `idcarrera` int DEFAULT NULL,
+  `idfacultades` int DEFAULT NULL,
+  PRIMARY KEY (`idlistado`),
+  KEY `idAlumno` (`idAlumno`),
+  KEY `idcarrera` (`idcarrera`),
+  KEY `idfacultades` (`idfacultades`),
+  CONSTRAINT `Listadoalumnoscurso_ibfk_1` FOREIGN KEY (`idAlumno`) REFERENCES `alumno` (`idAlumno`),
+  CONSTRAINT `Listadoalumnoscurso_ibfk_2` FOREIGN KEY (`idcarrera`) REFERENCES `Carrera` (`idcarrera`),
+  CONSTRAINT `Listadoalumnoscurso_ibfk_3` FOREIGN KEY (`idfacultades`) REFERENCES `facultades` (`idfacultades`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `Listadoalumnoscurso`
+--
+
+LOCK TABLES `Listadoalumnoscurso` WRITE;
+/*!40000 ALTER TABLE `Listadoalumnoscurso` DISABLE KEYS */;
+/*!40000 ALTER TABLE `Listadoalumnoscurso` ENABLE KEYS */;
+UNLOCK TABLES;
+
+
+DROP TABLE IF EXISTS `Certificacion`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `Certificacion` (
+  `idcertificacion` int NOT NULL,
+  `idAlumno` int DEFAULT NULL,
+  `carnet` int DEFAULT NULL,
+  `semestre` int DEFAULT NULL,
+  `año` int DEFAULT NULL,
+  `idfacultades` int DEFAULT NULL,
+  PRIMARY KEY (`idcertificacion`),
+  KEY `idAlumno` (`idAlumno`),
+  KEY `idCurso` (`idfacultades`),
+  CONSTRAINT `Certificacion_ibfk_1` FOREIGN KEY (`idAlumno`) REFERENCES `alumno` (`idAlumno`),
+  CONSTRAINT `Certificacion_ibfk_2` FOREIGN KEY (`idfacultades`) REFERENCES `facultades` (`idfacultades`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `Certificacion`
+
+
+LOCK TABLES `Certificacion` WRITE;
+/*!40000 ALTER TABLE `Certificacion` DISABLE KEYS */;
+/*!40000 ALTER TABLE `Certificacion` ENABLE KEYS */;
+UNLOCK TABLES;
