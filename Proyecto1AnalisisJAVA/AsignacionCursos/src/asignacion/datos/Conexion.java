@@ -5,42 +5,26 @@
  */
 package asignacion.datos;
 
-import com.sun.jdi.connect.spi.Connection;
-import java.io.IOException;
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import javax.swing.JOptionPane;
 /**
  *
  * @author Diana
  */
-public class Conexion {
-      // Estas constantes deben cambiarse temporalmente para probarlo localmente
+public class Conexion{
 
-    private static final String JDBC_URL = "jdbc:mysql://localhost/AsignacionCurso";
-    private static final String JDBC_USER = "root";
-    private static final String JDBC_PASS = "";
-
-
-    public static Connection getConnection() throws SQLException {
-        return (Connection) DriverManager.getConnection(JDBC_URL, JDBC_USER, JDBC_PASS);
-    }
+    Connection enlazar = null;
     
-    public static void close(ResultSet rs){
-        try {
-            rs.close();
-        } catch (SQLException ex) {
-            ex.printStackTrace(System.out);
+    public Connection conectar(){
+        try{
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            enlazar = DriverManager.getConnection("jdbc:mysql://localhost/asignacioncurso", "root","");
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, e + "No fue posible establecer la conexion");
+                    
         }
+        return enlazar;
     }
-    
-    public static void close(PreparedStatement stmt){
-        try {
-            stmt.close();
-        } catch (SQLException ex) {
-            ex.printStackTrace(System.out);
-        }
-    }
-    
-    public static void close(Connection conn) throws IOException{
-        conn.close();
-    }
+
 }
