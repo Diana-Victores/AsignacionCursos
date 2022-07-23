@@ -585,3 +585,20 @@ LOCK TABLES `Certificacion` WRITE;
 /*!40000 ALTER TABLE `Certificacion` DISABLE KEYS */;
 /*!40000 ALTER TABLE `Certificacion` ENABLE KEYS */;
 UNLOCK TABLES;
+DROP TABLE IF EXISTS CursosAsignados;
+CREATE TABLE CursosAsignados (
+	carnet int not null PRIMARY KEY,
+    Nombres varchar(20) not null,
+    Apellidos varchar(20) not null,
+    Boleta_Pago_Numero int not null,
+    Semestre_Trimestre int not null,
+    Año int not null,
+    Curso_1 varchar(40),
+    Curso_2 varchar(40),
+    Curso_3 varchar(40),
+    Curso_4 varchar(40),
+    Curso_5 varchar(40),
+    Curso_Extraordinario_1 varchar(40),
+    Curso_Extraordinario_2 varchar(40),
+	Curso_Extraordinario_3 varchar(40)
+)
